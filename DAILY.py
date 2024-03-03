@@ -6,16 +6,6 @@ import json
 cookie_value = os.getenv('COOKIE')
 cookies = {cookie.split('=')[0]: cookie.split('=')[1] for cookie in cookie_value.split('; ')}
 
-
-
-cookies = {
-    'wordpress_sec_ce72810736f5acb43dee489afc07d300': 'joshua3423%7C1710676443%7Cdj4UF6umqTtBpjdyNIevwcvZOU7ZU7YjQ9BGdGDuVqm%7C64af5fbee503cd9771809074e6c19ead213790d02450a74437b09400ba15ba2d',
-    'showed_system_notice': 'showed',
-    'PHPSESSID': 'nqou6308p0b9slhijvj77gco5n',
-    'wordpress_test_cookie': 'WP%20Cookie%20check',
-    'wordpress_logged_in_ce72810736f5acb43dee489afc07d300': 'joshua3423%7C1710676443%7Cdj4UF6umqTtBpjdyNIevwcvZOU7ZU7YjQ9BGdGDuVqm%7Cdee5ce35e2f1f918dec85c97137f61e58d90b28e2f6d79d0eb45f8056c86f98a',
-}
-
 headers = {
     'authority': 'www.eohut.com',
     'accept': 'application/json, text/javascript, */*; q=0.01',
@@ -39,7 +29,7 @@ data = {
 }
 
 response = requests.post('https://www.eohut.com/wp-admin/admin-ajax.php', cookies=cookies, headers=headers, data=data)
-print(response.text)
+response_str = str(response)
 # 解析返回值
 data = json.loads(response)
 
