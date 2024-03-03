@@ -39,7 +39,7 @@ data = {
 }
 
 response = requests.post('https://www.eohut.com/wp-admin/admin-ajax.php', cookies=cookies, headers=headers, data=data)
-
+print(response.text)
 # 解析返回值
 data = json.loads(response)
 
