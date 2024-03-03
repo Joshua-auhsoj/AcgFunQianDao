@@ -31,7 +31,7 @@ data = {
 response = requests.post('https://www.eohut.com/wp-admin/admin-ajax.php', cookies=cookies, headers=headers, data=data)
 response_str = str(response)
 # 解析返回值
-data = json.loads(response)
+data = json.loads(response_str)
 
 # 提取可读信息
 msg = data["msg"]
