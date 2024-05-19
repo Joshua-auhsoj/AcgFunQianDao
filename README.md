@@ -12,14 +12,13 @@ _ga=值; _gid=值; eb9e6_cknum=值D; eb9e6_ck_info=值; eb9e6_winduser=值D; eb9
 ```
 两端无引号，值间用分号隔开，从Chrome抓请求获取，或者将请求复制后摘取  
 ## 开发过程
-1.安装PyCharm，安装BurpSuite  
-2.使用BurpSuite抓包，登录到领取任务页面，打开拦截，F12开启录制请求，点击“领取任务”  
-3.查看并复制已录制请求，粘贴到翻译网站获得Python代码，查看拦截内容，复制其中“Cookie”字段的值，询问ChatGPT获得将Cookie转化为请求格式的代码  
-4.将两段代码融合，并加上从系统变量提取Cookie的代码，即可完成四个执行脚本之一，其余三个脚本以此类推完成  
-5.在BurpSuite中丢弃请求，关闭拦截，运行代码，刷新页面检查任务是否成功领取  
-6.询问ChatGPT得到处理及融合个脚本输出的代码，与Server酱的官方Python实例融合，得到控制脚本  
-7.询问ChatGPT得到GitHubAction配置文件，放置于“.github/workflows”文件夹内  
-8，将项目上传GitHub  
+1.启动Chrome，登陆网站  
+2.使用F12抓包，进行一次签到 
+3.查看并复制请求，粘贴到翻译网站获得Python代码，复制其中“Cookie”字段的值，询问ChatGPT获得将Cookie转化为请求格式的代码  
+4.将两段代码融合，并加上从系统变量提取Cookie的代码，即可完成两个个执行脚本之一，另一个脚本以此类推完成   
+5.询问ChatGPT得到处理及融合个脚本输出的代码，与Server酱的官方Python实例融合，得到控制脚本  
+6.询问ChatGPT得到GitHubAction配置文件，放置于“.github/workflows”文件夹内  
+7，将项目上传GitHub  
 ## 以上内容完成于23/12/13，19:32    
 抽空完成了整个项目，现在可以正常使用了
 ## 以上内容完成于24/05/19，21:23
