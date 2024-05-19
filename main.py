@@ -15,8 +15,7 @@ response_text2 = output_2.decode()
 
 
 
-print(response_text1)
-print(response_text1)
+print(response_text1 + response_text2)
 
 
 bot_token = os.environ.get('BOTTOKEN')
@@ -29,7 +28,7 @@ bot = Bot(token=bot_token)
 
 # 发送消息
 async def send_message():
-    await bot.send_message(chat_id=chat_id, text=response_text1)
+    await bot.send_message(chat_id=chat_id, text=response_text1 + response_text2)
 
 
 # 运行异步函数
