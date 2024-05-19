@@ -6,10 +6,12 @@ from telegram import Bot
 
 process_1 = subprocess.Popen(['python', 'DAILY.py'], stdout=subprocess.PIPE)
 output_1, _ = process_1.communicate()
+process_2 = subprocess.Popen(['python', 'GETSP.py'], stdout=subprocess.PIPE)
+output_2, _ = process_5.communicate()
 
 
 response_text1 = output_1.decode()
-
+title3 = output_5.decode()
 
 print(response_text1)
 
