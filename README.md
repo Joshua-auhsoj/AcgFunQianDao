@@ -16,9 +16,8 @@ _ga=值; _gid=值; eb9e6_cknum=值D; eb9e6_ck_info=值; eb9e6_winduser=值D; eb9
 2.使用F12抓包，进行一次签到 
 3.查看并复制请求，粘贴到翻译网站获得Python代码，复制其中“Cookie”字段的值，询问ChatGPT获得将Cookie转化为请求格式的代码  
 4.将两段代码融合，并加上从系统变量提取Cookie的代码，即可完成两个个执行脚本之一，另一个脚本以此类推完成   
-5.询问ChatGPT得到处理及融合个脚本输出的代码，与Server酱的官方Python实例融合，得到控制脚本  
-6.询问ChatGPT得到GitHubAction配置文件，放置于“.github/workflows”文件夹内  
-7，将项目上传GitHub  
+5.询问ChatGPT得到GitHubAction配置文件，放置于“.github/workflows”文件夹内  
+6，将项目上传GitHub  
 ## 以上内容完成于23/12/13，19:32    
 抽空完成了整个项目，现在可以正常使用了
 ## 以上内容完成于24/05/19，21:23
