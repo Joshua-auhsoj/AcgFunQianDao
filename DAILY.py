@@ -37,7 +37,6 @@ response = requests.post('https://www.eohut.com/wp-admin/admin-ajax.php', cookie
 data = json.loads(response.text)
 
 # 输出可读内容
-print("错误:", data.get("error"))
 print("信息:", data.get("msg"))
 print("连续签到:", data.get("continuous_day"))
 
