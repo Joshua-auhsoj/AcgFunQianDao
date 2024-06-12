@@ -2,6 +2,13 @@ import requests
 import os
 import json
 
+import cloudscraper
+
+scraper = cloudscraper.create_scraper()  # 创建一个scraper对象
+
+url = "https://rjhome.me/wp-json/b2/v1/getUserMission"
+
+
 
 cookie_value = os.getenv('COOKIE')
 cookies = {cookie.split('=')[0]: cookie.split('=')[1] for cookie in cookie_value.split('; ')}
@@ -33,8 +40,8 @@ data = {
     'paged': '1',
 }
 
-response = requests.post('https://rjhome.me/wp-json/b2/v1/getUserMission', cookies=cookies, headers=headers, data=data)
-print(response.text)
+#response = requests.post('https://rjhome.me/wp-json/b2/v1/getUserMission', cookies=cookies, headers=headers, data=data)
+response = scraper.post(url, cookies=cookies, headers=headers, data=data)
 
 json_data = json.loads(response.text)
 
