@@ -1,4 +1,4 @@
-# EoHot签到
+# RJHome签到
 ## 源代码来自只会用BurpSuite的我和神通广大的ChatGPT
 ### 感谢[能把Curl转换成各种语言的神奇网站](https://curlconverter.com/),感谢万能的[ChatGPT](https://poe.com/ChatGPT),感谢优秀的渗透工具[BurpSuite](https://portswigger.net/burp)，感谢大毛病不多，小毛病不断的浏览器[Chromium](https://www.chromium.org/chromium-projects/)及[Google Chrome](https://www.google.com/chrome/)
 ## 使用方法
@@ -20,4 +20,4 @@ _ga=值; _gid=值; eb9e6_cknum=值D; eb9e6_ck_info=值; eb9e6_winduser=值D; eb9
 6，将项目上传GitHub  
 ## 以上内容完成于23/12/13，19:32    
 抽空完成了整个项目，现在可以正常使用了
-## 以上内容完成于24/05/19，21:23
+
