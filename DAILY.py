@@ -34,7 +34,7 @@ data = {
 }
 
 response = requests.post('https://rjhome.me/wp-json/b2/v1/getUserMission', cookies=cookies, headers=headers, data=data)
-
+print(response.text)
 
 json_data = json.loads(response.text)
 
